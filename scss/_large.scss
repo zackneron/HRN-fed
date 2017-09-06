@@ -1,0 +1,56 @@
+// Desktop devices viewport from 1200px =============
+@media (min-width: 1200px) {
+	// HEADER STYLES =================
+	.navbar--top {
+		.navbar-brand:not(.navbar-burger) {
+			display: block;
+		}
+	}
+
+	.icon-title {
+	    font-size: 24px;
+	    line-height: 24px;
+	}
+
+
+
+	// CONTENT STYLES =================
+	.list-inline--separator {
+		li {
+			font-size: 18px;
+		}
+	}
+
+	.content-block {
+		display: block;
+	}
+
+	.booking-block {
+		&--active {
+			transform: scale(1, 1.1);
+		}
+
+		&__title {
+			font-size: 14px;
+		}
+
+		&__promo {
+
+			&--custom {
+				font-size: 10px;
+			}
+		}
+	}
+
+	// FOOTER STYLES =================
+	footer {
+		.footer-logo {
+			margin-top: 3.33vw; 
+			margin-bottom: 2.50vw; 
+		}
+		.footer-menu {
+			margin-bottom: 2.46vw;
+		}
+	}
+}
+

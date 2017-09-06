@@ -1,0 +1,87 @@
+// Mobile devices viewport from 0px to 767px =============
+
+@media (min-width: 0px) {
+	// Header styles =============
+
+
+	// Content styles ============
+
+	.list-inline--separator {
+		li {
+			font-size: 18px;
+			&:not(:last-child):after {
+				content: "";
+				color: transparent;
+			}
+
+			a {
+				color: $blue95;
+			}
+		}
+	}
+	.show-mobile {
+		display: inline-block;
+	}
+	.show-tablet {
+		display: none;
+	}
+
+	.icon {
+	    display: block;		
+	}
+	.icon-title {
+	    font-size: 15px;
+	    line-height: 15px;
+	}
+
+	.season-block {
+		&__item {
+			.out {
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+
+	.content-block {
+		display: none;
+	}
+
+	.booking-block {
+		&__title {
+			.active-choice {
+				display: block;
+			}
+		}
+	}
+
+
+	// Footer styles ============
+	
+	footer {
+		.footer-logo {
+			margin-top: 10vw; 
+			margin-bottom: 5vw; 
+		}
+		.footer-menu {
+			margin-bottom: 5vw;
+		}
+		.footer-copyright {
+			margin-bottom: 10vw;
+		}
+	}
+	.list-inline {
+		&--copyright li {
+			display: block;
+		}
+	}
+}
+
+
+@media (min-width: 550px) and (max-width: 767px) {
+  .icon-title {
+	    font-size: 20px;
+	    line-height: 20px;
+	}
+}

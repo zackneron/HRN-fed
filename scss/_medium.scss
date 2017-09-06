@@ -1,0 +1,76 @@
+// Tablets devices viewport from 768px to 1199px =============
+@media (min-width: 768px) {
+
+	// HEADER STYLES =================
+	.navbar--top {
+		.navbar-burger {
+			display: none;
+		}
+	}
+	.icon {
+	    display: inline-block;		
+	}
+	.icon-title {
+	    font-size: 16px;
+	    line-height: 16px;
+	}
+
+	// CONTENT STYLES =================
+	.list-inline--separator {
+		li {
+			font-size: 15px;
+			&:not(:last-child):after {
+				content: "/";
+				color: $blue;
+			}
+
+			a {
+				color: $blue95;
+			}
+		}
+	}
+
+	.season-block {
+		&__item {
+			.out {
+				text-transform: none;
+				font-weight: 500;
+			}
+		}
+	}
+
+		.show-mobile {
+			display: none;
+		}
+		.show-tablet {
+			display: inline-block;
+		}
+
+		.booking-block {
+			&__title {
+				font-size: 19px;
+			}
+		}
+
+
+	// FOOTER STYLES =================
+
+	footer {
+		.footer-logo {
+			margin-top: 5.67vw; 
+			margin-bottom: 5.10vw; 
+		}
+		.footer-menu {
+			margin-bottom: 3.46vw;
+		}
+		.footer-copyright {
+			margin-bottom: 5.60vw;
+		}
+		
+	}
+	.list-inline {
+		&--copyright li {
+			display: inline-block;
+		}
+	}
+}

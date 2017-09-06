@@ -1,0 +1,11 @@
+4 block
+text font MuseoSans 300, 900, 500 italic, 
+title 900
+
+title: 20
+title red:
+price: 60
+save: 14
+until: 18
+list: 14.97 (15)
+date blue: 14 all text

@@ -1,0 +1,96 @@
+/*====== Fonts declaration ============ */
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Georgia-Italic";
+  src: url("../georgia/georgia-italic.ttf");
+}
+
+/*---------------------------------------*/
+
+body {
+  font-family: "Roboto Light", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+div {
+	text-align: center;
+}
+
+.display-none {
+	display: none;
+}
+.display-block {
+	display: block;
+}
+
+.responsive-img {
+	max-width: 100%;
+}
+
+.list-inline {
+	list-style: none;
+	li {
+		display: inline-block;
+	}
+
+	&--group {
+		li {
+			margin-right: 40px;
+		}
+	}
+	&--upper {
+		li {
+			margin-right: 20px;
+			text-transform: uppercase;
+		}
+	}
+	&--separator {
+		li {
+			position: relative;
+			text-transform: uppercase;
+
+			&:not(:last-child):after {
+				content: "/";
+				color: $blue;
+			}
+
+			a {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			.item-active {
+				font-weight: 600;
+				color: $blue;
+				font-family: "Roboto Bold", "Helvetica Neue",Helvetica,Arial,sans-serif;
+			}
+		}
+	}
+}
+
+.border-bar {
+	margin-right: 5px;
+	position: relative;
+	&:after {
+		content: "";
+		border-right: 1px solid $white;
+		position: absolute;
+		top: 0;
+    	bottom: 0;
+    	margin-left: 5px;
+	}
+}

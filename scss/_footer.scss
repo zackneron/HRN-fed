@@ -1,0 +1,24 @@
+footer {
+	background-color: $black17;
+
+	a {
+		color: $white;
+
+		&:hover,
+		&:visited {
+			color: $white;
+			text-decoration: none;
+		}
+	}
+
+	.footer-logo {
+		margin-top: 3.33vw; 
+	}
+}
+
+.list-inline--icon {
+	.fa {
+		font-size: 26px;
+		margin-right: 20px;
+	}
+}

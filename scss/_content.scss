@@ -1,0 +1,164 @@
+// Content style ==========================
+.season-block,
+.content-block,
+.booking-container,
+.btn-target-container {
+	margin-top: 80px;
+}
+
+.season-block {
+	&__item {
+		.out {
+			color: $white;
+			text-transform: none;
+			background-color: $blue95;
+			padding: 2px 5px;
+		}
+
+		.time-load {
+			display: inline-block;
+		}
+	}
+}
+
+.booking-block {
+	background-color: $white97;
+	box-shadow: 0px 0px 5px rgb(202, 199, 199);
+	margin: 0 auto 15px;
+	max-width: 350px;
+
+	&__title {
+		font-size: 20px;
+		font-weight: 600;
+		font-family: "Roboto Bold", "Helvetica Neue",Helvetica,Arial,sans-serif;
+		color: $blue;
+		margin: 0;
+    	padding: 10px;
+    	text-transform: uppercase;
+
+		.active-choice {
+			display: block;
+			color: $red;
+		}
+	}
+	&__price {
+		font-size: 60px;
+		font-weight: 600;
+		font-family: "Roboto Bold", "Helvetica Neue",Helvetica,Arial,sans-serif;
+		display: block;
+		color: $blue;
+	}
+	&__save {
+		font-size: 14px;
+		display: block;
+		color: $gray;
+	}
+	&__promo {
+		font-size: 18px;
+		display: block;
+		color: $blue;
+		margin-bottom: 10px;
+
+		&--custom {
+			font-size: 14px;
+			color: $gray;
+			font-style: italic;
+			border: 1px solid $gray;
+    		padding: 2px;
+    		margin-left: 20px;
+    		margin-right: 20px;
+    		text-align: left;
+
+			.blue-skin {
+				color: $blue;
+			}
+		}
+	}
+
+	&__benefits {
+		text-align: left;
+		padding: 0 30px;
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				text-indent: -17px;
+				&:before {
+					content: "\f111";
+					color: $blue;
+					font-family: FontAwesome;
+					font-size: 7px;
+					padding-right: .5rem;
+				}
+			}
+		}
+	}
+
+	&__btn {
+		button {
+			border-radius: 0;
+			text-transform: uppercase;
+    		font-weight: 600;
+
+		}
+		.btn-active {
+				background-color: $red;
+				border-color: $red;
+			}
+	}
+}
+
+.btn-target-block {
+	button {
+		border-radius: 0;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-family: "Roboto Bold", "Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 14px;
+		width: 200px;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+	.btn-default {
+	    color: $blue;
+	    background-color: $white;
+	    border-color: $blue;
+
+	    &:hover,
+	    &:focus {
+	    	color: $blue;
+	    	background-color: $white;
+	    	border-color: $blue;
+	    }
+	}
+}
+
+
+.partner-container {
+	margin-bottom: 80px;
+	margin-top: 80px;
+}
+.partner-block {
+	&__title {
+		margin-bottom: 40px;
+		text-transform: uppercase;
+
+		h3 {
+			color: $gray80;
+		}
+	}
+	&__logo {
+		img {
+			-webkit-filter: grayscale(1);
+	  		filter: grayscale(1);
+	  		margin-bottom: 20px;
+			&:hover {
+			-webkit-filter: grayscale(0);
+	  		filter: grayscale(0);
+			}
+		}
+	}
+}
